@@ -486,7 +486,7 @@ uint32_t Order3::insertDT(vector<uint32_t> &vInsE)
         //     findLayerToInsert(support_cnt_c,support_cnt_f, eid);
         // }
         findLayerToInsert(support_cnt_c,support_cnt_f, eid);
-        while (/*!m_PQ.empty()*/false){
+        while (!m_PQ.empty()){
             uint32_t cur_eid =  m_PQ.top().eid;
             m_PQ.pop();
             be_in_pq[cur_eid] = true;
@@ -910,7 +910,7 @@ uint32_t Order3::rmDT(vector<uint32_t> &vRmE)
                 be_in_pq[neighbors.second] = true;
             //}
         }
-        while (false/*!m_PQ.empty()*/){
+        while (!m_PQ.empty()){
             uint32_t cur_eid =  m_PQ.top().eid;
             m_PQ.pop();
             be_in_pq[cur_eid] = true;
