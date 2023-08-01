@@ -1,3 +1,0 @@
-/Users/xkliao/CLionProjects/StreamingNew/optimizedpeeling/cmake-build-debug/CMakeFiles/optimizedpeeling.dir
-/Users/xkliao/CLionProjects/StreamingNew/optimizedpeeling/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/xkliao/CLionProjects/StreamingNew/optimizedpeeling/cmake-build-debug/CMakeFiles/rebuild_cache.dir
