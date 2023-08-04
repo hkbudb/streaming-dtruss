@@ -33,12 +33,12 @@ Go to the directory of corresponding algorithms and simply run ./compile.sh
 The running commands for running the algorithms are shown below. Note that if you want to run the algorithm, you should go to the corresponding directory first, e.g., to run the repeel without OPT, you should be in the "repeel" folder
 
 ```bash
-For the repeel without OPT: repeeling filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf
-For the repeel with OPT1: repeel-hindex filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf
-For the repeel with OPT2: bfsbased filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf
-For the repeel with OP3: prediction filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf
-For the repeel with all OPTs: repeel-all filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf
-For the order-based method: order filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf
+For the repeel without OPT: repeeling filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
+For the repeel with OPT1: repeel-hindex filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
+For the repeel with OPT2: bfsbased filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
+For the repeel with OP3: prediction filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
+For the repeel with all OPTs: repeel-all filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
+For the order-based method: order filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
 ```
 
 ## 
