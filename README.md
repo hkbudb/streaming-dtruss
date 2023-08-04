@@ -30,7 +30,7 @@ Go to the directory of corresponding algorithms and simply run ./compile.sh
 
 ## How to run the algorithms
 
-The running commands for running the algorithms are shown below. Note that if you want to run the algorithm, you should go to the corresponding directory first, e.g., to run the repeel without OPT, you should be in the "repeel" folder
+The running commands for running the algorithms are shown below. Note that if you want to run the algorithm, you should go to the corresponding directory first, e.g., to run the repeel without OPT, you should be in the "repeel" folder. Please note that the query vertices Q is in the form of string: "v1 v2 v3 ...".
 
 ```bash
 For the repeel without OPT: repeeling filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
