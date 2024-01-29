@@ -1,16 +1,17 @@
 
 ## Description
-Welcome to the readme file of the code for the paper titled **Truss-based Community Search over Streaming Directed Graphs**. In this work, we formally define the problem of D-truss-based community search over streaming-directed graphs. Based on the sliding window model, we first propose a peeling-based algorithm together with three optimizations to reduce the peeling input. We further propose an order-based algorithm to avoid retrieving the community from scratch. 
+Welcome to the readme file of the code for the paper titled **Truss-based Community Search over Streaming Directed Graphs**. In this work, we provide a formal definition of the problem of D-truss-based community search over streaming-directed graphs. Using the sliding window model as a basis, we initially introduce a peeling-based algorithm along with three optimizations to reduce the peeling input. Additionally, we propose an order-based algorithm to avoid retrieving the community from scratch.
 
 ## Contributions
 - Novel problem of D-truss community search over streaming graphs
 - A peeling-based algorithm that incorporates three optimizations
-- A order based algorithm
+- An order-based algorithm
 
 ## Environment
 All of our algorithms are implemented in C++ 11 and compiled with the g++ compiler at -O3 optimization level. The development environment used for implementing and testing is:
 
 -Linux version: Oracle Linux 8.8
+
 -g++ version: 11.2.0
 
 
@@ -38,7 +39,7 @@ Go to the directory of corresponding algorithms. To compile the corresponding co
 ```bash
 ./compile.sh
 ```
-After compilation, executable files named $order$/$repeel-all$/$repeel-bfs$/$repeel-hindex$/$repeel-prediction$/$repeeling$/ will be generated.
+After compilation, executable files named ```order```/```repeel-all```/```repeel-bfs```/```repeel-hindex```/```repeel-prediction```/```repeeling```/ will be generated.
 
 
 ## How to run the algorithms
