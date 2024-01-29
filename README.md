@@ -1,6 +1,6 @@
 
 ## Description
-Welcome to the readme file of the code for the paper titled **Truss-based Community Search over Streaming Directed Graphs**. In this work, we provide a formal definition of the problem of D-truss-based community search over streaming-directed graphs. Using the sliding window model as a basis, we initially introduce a peeling-based algorithm along with three optimizations to reduce the peeling input. Additionally, we propose an order-based algorithm to avoid retrieving the community from scratch.
+Welcome to the readme file of the code for the paper titled **Truss-based Community Search over Streaming Directed Graphs**. In this work, we provide a formal definition of the problem of D-truss-based community search over streaming directed graphs. Using the sliding window model as a basis, we initially introduce a peeling-based algorithm along with three optimizations to reduce the peeling input. Additionally, we propose an order-based algorithm to avoid retrieving the community from scratch.
 
 ## Contributions
 - Novel problem of D-truss-based community search over streaming graphs
