@@ -32,9 +32,9 @@ The input is a .txt file that has three columns in the form of "u v t". An examp
 9 15 10
 ```
 
-## Compiling the algorithms
+## How to compile the algorithms
 
-Go to the directory of corresponding algorithms. To compile the corresponding code:
+To compile the corresponding code, first go to the directory of corresponding algorithms, then:
 
 ```bash
 ./compile.sh
