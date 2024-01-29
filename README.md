@@ -22,6 +22,7 @@ The input is a .txt file that has three columns, in the form of "u v t", an exam
 9 14 9
 9 15 10
 ```
+```
 
 ## Compiling the algorithms
 
