@@ -10,7 +10,7 @@ Welcome to the readme file of the code for the paper titled **Truss-based Commun
 ## Environment
 All of our algorithms are implemented in C++ 11 and compiled with the g++ compiler at -O3 optimization level. The development environment used for implementing and testing is:
 
--Linux version: Oracle Linux 8.8
+-Linux version: Oracle Linux 8.6
 
 -g++ version: 11.2.0
 
