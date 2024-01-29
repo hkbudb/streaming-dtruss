@@ -1,14 +1,22 @@
-Welcome to the readme file of the code for the paper titled as **Truss-based Community Search over Streaming Directed Graphs**. In this work, several efficient algorithms are proposed to answer the community search query over streaming directed graphs. All of our algorithms are implemented in C++.
 
-## Dependencies
-The algorithms should also work on Unix-like systems. Building our algorithms requires the following software installed as dependencies.
+## Description
+Welcome to the readme file of the code for the paper titled **Truss-based Community Search over Streaming Directed Graphs**. In this work, we formally define the problem of D-truss-based community search over streaming-directed graphs. Based on the sliding window model, we first propose a peeling-based algorithm together with three optimizations to reduce the peeling input. We further propose an order-based algorithm to avoid retrieving the community from scratch. 
 
-- A modern C++ compiler compliant with C++-11 standard. (g++ >= 4.8.1 or clang++ >= 3.3)
+## Contributions
+- Novel problem of D-truss community search over streaming graphs
+- A peeling-based algorithm that incorporates three optimizations
+- A order based algorithm
+
+## Environment
+All of our algorithms are implemented in C++ 11 and compiled with the g++ compiler at -O3 optimization level. The development environment used for implementing and testing is:
+
+-Linux version: Oracle Linux 8.8
+-g++ version: 11.2.0
 
 
-## The input
+## Dataset format
 
-The input is a .txt file that has three columns, in the form of "u v t", an example is shown below:
+The input is a .txt file that has three columns in the form of "u v t". An example is shown below:
 
 ```bash
 1 2 1
@@ -22,22 +30,26 @@ The input is a .txt file that has three columns, in the form of "u v t", an exam
 9 14 9
 9 15 10
 ```
-```
 
 ## Compiling the algorithms
 
-Go to the directory of corresponding algorithms and simply run ./compile.sh
+Go to the directory of corresponding algorithms. To compile the corresponding code:
+
+```bash
+./compile.sh
+```
+After compilation, executable files named $order$/$repeel-all$/$repeel-bfs$/$repeel-hindex$/$repeel-prediction$/$repeeling$/ will be generated.
 
 
 ## How to run the algorithms
 
-The running commands for running the algorithms are shown below. Note that if you want to run the algorithm, you should go to the corresponding directory first, e.g., to run the repeel without OPT, you should be in the "repeel" folder. Please note that the query vertices Q is in the form of string: "v1 v2 v3 ...".
+The running commands for running the algorithms are shown below. Note that if you want to run the algorithm, you should go to the corresponding directory first. E.g., to run the repeel without OPT, you should be in the "repeel" folder. Please note that the query vertices Q are in the form of string: "v1 v2 v3 ...".
 
 ```bash
 For the repeel without OPT: repeeling filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
 For the repeel with OPT1: repeel-hindex filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
-For the repeel with OPT2: bfsbased filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
-For the repeel with OP3: prediction filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
+For the repeel with OPT2: repeel-bfs filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
+For the repeel with OP3: repeel-prediction filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
 For the repeel with all OPTs: repeel-all filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
 For the order-based method: order filepath (e.g. ~/data/msg.txt) windowsize stridesize kc kf Q
 ```
